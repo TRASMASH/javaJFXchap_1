@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="261.0" prefWidth="394.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lmdsio.javajfx_chap1.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label fx:id="loginText" prefHeight="17.0" prefWidth="173.0" text="veuillez saisir vos identifiants">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <HBox alignment="CENTER">
+        <Label alignment="CENTER_RIGHT" minWidth="100.0" text="login " />
+        <TextField fx:id="loginField" alignment="CENTER" prefHeight="27.0" prefWidth="147.0" />
+    </HBox>
+
+
+   <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="0.0">
+      <children>
+         <Label alignment="CENTER_RIGHT" minWidth="100.0" prefHeight="17.0" prefWidth="75.0" text="mot de passe " />
+         <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="152.0" />
+      </children>
+   </HBox>
+   <HBox alignment="BOTTOM_RIGHT" prefHeight="19.0" prefWidth="194.0">
+      <children>
+          <Button fx:id="loginButton" alignment="BOTTOM_RIGHT" defaultButton="true" onAction="#onLoginButtonClick" text="Se connecter" translateX="-55.0" />
+         <Button fx:id="logoutButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#onLogoutButtonClick" text="se déconnecter" translateX="-50.0" translateY="1.0" />
+      </children>
+   </HBox>
+   
+</VBox>
