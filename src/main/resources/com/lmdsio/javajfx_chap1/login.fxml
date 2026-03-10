@@ -28,7 +28,7 @@
    <HBox alignment="BOTTOM_RIGHT" prefHeight="19.0" prefWidth="194.0">
       <children>
           <Button fx:id="loginButton" alignment="BOTTOM_RIGHT" defaultButton="true" onAction="#onLoginButtonClick" text="Se connecter" translateX="-55.0" />
-         <Button fx:id="logoutButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#onLogoutButtonClick" text="se déconnecter" translateX="-50.0" translateY="1.0" />
+         <Button fx:id="logoutButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#onLogoutButtonClick" text="se déconnecter" translateX="-50.0" translateY="1.0" />
       </children>
    </HBox>
    
