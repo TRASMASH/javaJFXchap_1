@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LoginController {
@@ -19,8 +20,9 @@ public class LoginController {
     private Button loginButton;
     @FXML
     private int errorCount = 0;
-    @FXML
-    private ListView<String> mylistView;
+    private List<String> loginsAutorises = new ArrayList<String>();
+    private List<String> motsDePasseAutorises = new ArrayList<String>();
+
 
     @FXML
     protected void onLoginButtonClick() {
@@ -62,6 +64,10 @@ public class LoginController {
         logoutButton.setDisable(true);
         loginButton.setDisable(false);
 
+    }
+    protected void initialize() {
+        loginsAutorises.add("younes");
+        motsDePasseAutorises.add("loureiro");
     }
 
 }
